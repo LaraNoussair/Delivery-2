@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@400;700&family=Londrina+Solid&display=swap');
+
+body {
+   font-family: "Khula", sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   position: relative;
+}
+
+.columns-container  {
+   flex: 1;
+   border-right: 1px solid #f5bd04;
+   text-align: center;
+   display:flex;
+   justify-content: center;
+   align-items:center;
+   position:relative;
+}
+
+.column:last-child {
+   border-right:none;
+}
+
+.navbar {
+   border: 2px solid rgb(46, 249, 161); 
+   background-color: rgb(15, 229, 236);
+   font-family: "Khula", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.navbar-nav .nav-link:hover {
+   color: rgb(236, 3, 158);
+}
+
+.container {
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+ 
+}
+.row {
+   display: flex;
+   flex: 1;
+}
+.column {
+   flex: 1;
+   padding: 20px;
+   border-right: 1px solid #ccc;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+}
+.column:last-child {
+   border-right: none;
+}
+
+.image1 {
+   height: 45em;
+   width: 100%;
+}
+
+.titles {
+   margin-left: 5em;
+   font-family: "Londrina Solid", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   font-size:2em;
+}
+
+.text {
+   margin-left: 5em;
+   font-family: "Khula", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   text-align: center;
+}
+
+div {
+   width: 100%;
+   margin: 0;
+   display: flex;
+   justify-content: space-between;
+ }
+
+img {
+   width: 30%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 5em;
+   display: block;
+  
+ }
+.rounded-bottom-right {
+   border-bottom-right-radius: 20%;
+}
+
+.rounded-bottom-left {
+   border-bottom-left-radius: 20%;
+
+}
+h1 {
+   font-family: "Londrina Solid", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   text-transform: uppercase;
+   margin-left: 2em;
+}
+
+h3 {
+   font-family: "Khula", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   margin-left: 3em;
+   text-align: justify;
+
+}
+
+p {
+   font-family: "Khula", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+#h1 {
+   text-align:center;
+   text-decoration: underline;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+
+.carousel-item {
+   height: 100vh; /* Ensures the carousel item takes up full viewport height */
+   min-height: 300px;
+ }
+ .carousel-item img {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   min-height: 300px;
+   min-width: 100%;
+   transform: translate(-50%, -50%);
+   object-fit: cover;
+ }
+ .carousel-caption {
+   position: absolute;
+   bottom: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   text-align: center;
+ }
+
+footer {
+   background-color: #08e3f7;
+   height: 200px;
+   width: 100%;
+   margin: 0;
+}
+
+@media (max-width: 768px) {
+   .column {
+       min-width: calc(50% - 20px); /* 50% width for smaller screens */
+   }
+   img {
+       min-width:  calc(50% - 20px);
+   }
+}
+
+@media (max-width: 480px) {
+   .column {
+       min-width: calc(100% - 20px); /* 100% width for very small screens */
+   }
+}
